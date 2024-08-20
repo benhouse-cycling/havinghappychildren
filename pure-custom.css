@@ -96,6 +96,17 @@ figure {
 	
 }
 
+.head {
+	color: rgb(191, 40, 85); 
+	font-weight: 700; 
+	font-family: arial, 
+	helvetica, sans-serif; 
+	font-size: 28px; 
+	font-weight: bold; 
+	font-style: italic; 
+	padding: 0;
+}
+
 .subhead-1 {
 	color: rgb(63, 191, 40); 
 	font-weight: 400; 
