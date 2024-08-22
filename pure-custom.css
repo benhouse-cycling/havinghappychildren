@@ -17,7 +17,6 @@ a {
 	color: #174279;
 }
 
-
 /* Remove border for screens larger than 768px */
 @media (max-width: 35.5em) {
   .borders {
@@ -149,3 +148,23 @@ figure {
 #back2Top:hover {
 	background-color: #07BCED;
 }
+
+.i-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	/* padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+	padding-top: 75%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  }
+
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+  }

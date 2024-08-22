@@ -19,12 +19,31 @@
 
 
 <link rel="stylesheet" href="pure-custom.css">
+<link rel="stylesheet" href="modal.css">
 
 </head>
 
 <body>
 
 <button onclick="topFunction()" id="back2Top" title="Go to top">Back to top</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+	<!-- Modal content -->
+		<div class="modal-content">
+			<div class="pure-g">
+				<div class="pure-u-1 pure-u-md-1 pure-u-lg-1">
+
+						<span class="close">&times;</span>
+						<div class="i-container">
+							<iframe class="responsive-iframe" src="https://docs.google.com/presentation/d/e/2PACX-1vTOMhUyH2Lkk4SkVV5dVy2CLTqNT4Fm-JCy8BtSSTS1bHEp1W5WB2gXiE7FS_m-IwqvocF8HmDKPAql/embed?start=false&amp;loop=true&amp;delayms=5000"></iframe>
+						</div>
+
+				</div>
+			</div>
+		</div>
+</div>
 
 <script>
 // Get the button
@@ -41,12 +60,10 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
 </script>
+
+
+
 
 
 <!-- replicating https://www.havinghappychildren.org/ -->
@@ -78,16 +95,16 @@ function topFunction() {
 							<a href="#part-2" class="pure-menu-link menu-style">Part 2 &#8211; for experts</a>
 					</li>
 					<li class="pure-menu-item">
-							<a href="#" class="pure-menu-link menu-style">Slide show</a>
+							<a href="#" id="myBtn" class="pure-menu-link menu-style">Slide show</a>
 					</li>
 					<li class="pure-menu-item">
-							<a href="#" class="pure-menu-link menu-style">References</a>
+							<a href="#references" class="pure-menu-link menu-style">References</a>
 					</li>
 				</ul>
 			</div>
-
+			
 		</div>
-	
+
 		<div class="pure-u-1">
 			<div class="l-box" style="padding-right: 60px;">
 				<h2 class="subhead-1"><b><i>However young &#8211; &quot;Start preparing now&quot;</i> say the scientists</b> &#8211; <a class="subhead-1" href="#part-1"><u>Part 1.</u></a></h2>
@@ -98,12 +115,13 @@ function topFunction() {
 		</div>
 
 		<div class="pure-u-1 center">
-			<figure>
-				<img class="pure-img" style="width: 932px; height: auto;" src="img/image6.webp" alt="Happy">
-				<figcaption><a href="https://www.foundationyears.org.uk/wp-content/uploads/2017/11/Eat-Better-Start-Better1.pdf">Eat-Better-Start-Better</a> <a href="#references">[1]</a></figcaption>
-			</figure>
+			<div id="image-container">	
+				<figure>
+					<img class="pure-img" style="width: 932px; height: auto;" src="img/image6.webp" alt="Happy">
+					<figcaption><a href="https://www.foundationyears.org.uk/wp-content/uploads/2017/11/Eat-Better-Start-Better1.pdf">Eat-Better-Start-Better</a> <a href="#references">[1]</a></figcaption>
+				</figure>
+			</div>
 		</div>
-
 
 		<div class="pure-u-1">
 			<div class="l-box borders">
@@ -425,7 +443,7 @@ function topFunction() {
 			<div class="l-box">
 				<p style="line-height: 0; padding-top: 2em;"><strong>Fish for the brain</strong></p>
 
-				<p>Another vital nutrient, especially for the brain, is omega-3 DHA, mainly from fish, long associated with brain quality, and explained scientifically in the 1970s. <a href="#references">[21]<a> </p>
+				<p>Another vital nutrient, especially for the brain, is omega-3 DHA, mainly from fish, long associated with brain quality, and explained scientifically in the 1970s. <a href="#references">[21]</a> </p>
 
 				<p><strong>By 6 months in the womb, the already large brain</strong> is growing extra fast, making a huge demand on the mother for DHA. The 'placental pump' favours the fetus, If DHA is short, the fetus draws it from the mother's brain, Her lack of DHA often causes her depression, as is common with the Western diet and affects the child <a href="#references">[24]</a> . </p>
 
@@ -549,6 +567,7 @@ function topFunction() {
 		<div class="pure-u-1">
 			<div class="l-box">
 				<p><strong>Whatever your age</strong>, you may like to understand more about this fascinating subject in Part 2.</p>
+
 			</div>
 		</div>
 
@@ -935,9 +954,57 @@ function topFunction() {
 	</div>
 </div>
 
-
 </div>
 
+<script>
+
+	const replaceLink = document.getElementById('replace-link');
+	const imageContainer = document.getElementById('image-container');
+	
+	replaceLink.addEventListener('click', (event) => {
+	  event.preventDefault(); // Prevent default link behavior
+	
+	  const iframeUrl = replaceLink.getAttribute('href');
+	  const iframe = document.createElement('iframe');
+	  iframe.src = iframeUrl;
+	
+	  imageContainer.innerHTML = ''; // Clear the container
+	  imageContainer.appendChild(iframe);
+	});
+		
+</script>
+
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
 </body>
+
 
 </html>
