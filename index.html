@@ -60,6 +60,11 @@ function scrollFunction() {
   }
 }
 
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 </script>
 
 
@@ -956,23 +961,6 @@ function scrollFunction() {
 
 </div>
 
-<script>
-
-	const replaceLink = document.getElementById('replace-link');
-	const imageContainer = document.getElementById('image-container');
-	
-	replaceLink.addEventListener('click', (event) => {
-	  event.preventDefault(); // Prevent default link behavior
-	
-	  const iframeUrl = replaceLink.getAttribute('href');
-	  const iframe = document.createElement('iframe');
-	  iframe.src = iframeUrl;
-	
-	  imageContainer.innerHTML = ''; // Clear the container
-	  imageContainer.appendChild(iframe);
-	});
-		
-</script>
 
 <script>
 
@@ -995,12 +983,13 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+/* // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
+*/
 
 </script>
 
