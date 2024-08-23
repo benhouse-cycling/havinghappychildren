@@ -209,11 +209,11 @@ figure {
 .custom-toggle .bar {
 	background-color: black;
 	display: block;
-	width: 25px;
+	width: 30px;
 	height: 3px;
 	border-radius: 100px;
 	position: absolute;
-	top: 18px;
+	top: 20px;
 	right: 7px;
 	-webkit-transition: all 0.5s;
 	-moz-transition: all 0.5s;
