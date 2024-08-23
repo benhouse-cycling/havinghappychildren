@@ -169,9 +169,7 @@ figure {
 	border: none;
   }
 
-  html, body {
-	overflow-x: hidden;
-  }
   body {
-	position: relative
-  }
+    overflow-x: hidden;
+    width: 100%;
+}
