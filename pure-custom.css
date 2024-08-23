@@ -168,3 +168,10 @@ figure {
 	height: 100%;
 	border: none;
   }
+
+  html, body {
+	overflow-x: hidden;
+  }
+  body {
+	position: relative
+  }
