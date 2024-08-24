@@ -107,7 +107,7 @@ figure {
 	font-size: 30px; 
 	font-weight: bold; 
 	font-style: italic; 
-	padding: 0;
+	padding: 0.2em;
 	text-transform: none;
 }
 
@@ -117,6 +117,7 @@ figure {
 	font-family: arial, helvetica, sans-serif; 
 	font-size: 24px; 
 	margin-bottom: 0.5rem;
+	padding: 0.2em;
 }
 
 .subhead-2 {
@@ -180,7 +181,7 @@ figure {
 .custom-wrapper {
 	margin-bottom: 1em;
 	-webkit-font-smoothing: antialiased;
-	height: 2.1em;
+	height: 3em;
 	overflow: hidden;
 	-webkit-transition: height 0.5s;
 	-moz-transition: height 0.5s;
