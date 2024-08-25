@@ -14,7 +14,7 @@
     # Destination directory on the server
     SERVER_DESTINATION: /home/gilgongo/html/happy
     # Additional rsync arguments
-    ARGS: # optional
+    ARGS: "-avv --delete --delete-excluded --exclude-from=.exclude * /home/gilgongo/html/bb2/happy/"
     # Folder to deploy
     FOLDER: # optional
           
