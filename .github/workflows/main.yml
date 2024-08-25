@@ -6,13 +6,13 @@
     # SSH private key for authentication
     DEPLOY_KEY: 
     # SSH username
-    USERNAME: 
+    USERNAME: gilgongo
     # IP address of the server
-    SERVER_IP: 
+    SERVER_IP: 185.73.44.83
     # SSH port of the server
-    SERVER_PORT: 
+    SERVER_PORT: 22
     # Destination directory on the server
-    SERVER_DESTINATION: 
+    SERVER_DESTINATION: /home/gilgongo/html/happy
     # Additional rsync arguments
     ARGS: # optional
     # Folder to deploy
