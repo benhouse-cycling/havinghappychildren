@@ -4,11 +4,11 @@
   uses: saranraj3195/sparkout-deployment@v2
   with:
     # SSH private key for authentication
-    DEPLOY_KEY: 
+    DEPLOY_KEY: ${{ secrets.SERVER_SSH_KEY }}
     # SSH username
     USERNAME: gilgongo
     # IP address of the server
-    SERVER_IP: 185.73.44.83
+    SERVER_IP: ${{ secrets.SERVER_IP }}
     # SSH port of the server
     SERVER_PORT: 22
     # Destination directory on the server
