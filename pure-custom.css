@@ -7,6 +7,15 @@
 	/* border: 1px solid #555; */
 }
 
+/* Adjust text for smaller screens */
+@media (max-width: 35.5em) {
+	.l-box {
+		margin-left: 2em;
+		margin-right: 2em;
+		text-align:justify;
+	}
+  }
+
 .borders {
 	border-left: 5em solid;
 	border-right: 5em solid;
