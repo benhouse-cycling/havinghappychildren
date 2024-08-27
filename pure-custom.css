@@ -20,10 +20,24 @@ html, button, input, select, textarea,
 	width: 100%;
 }
 
+.pure-img {
+	width: 100% !important;
+	height: auto;
+}
+
+
 .l-box {
         margin-left: 2em;
+		padding: 0.5em 2em;
 	/* border: 1px solid #555; */
 }
+
+.indented {
+	margin-left: 1em; 
+	line-height: 1.1;
+  }
+
+
 
 /* Adjust text for smaller screens */
 @media (max-width: 35.5em) {
@@ -98,6 +112,11 @@ figure {
 	color: #5DF7F6;
 	background-color: #924A21;
 	font-weight: bold;
+}
+
+.weird-center {
+	text-align: center;
+	font-size: 25px;
 }
 	
 .block-images {
