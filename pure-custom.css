@@ -1,3 +1,21 @@
+body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
+a {
+	color: #174279;
+}
+
+html, button, input, select, textarea,
+	.pure-g [class *= "pure-u"] {
+	/* Set your content font stack here: */
+	font-family: "Raleway", sans-serif;
+	line-height: 2em;
+	font-size: 18px;
+	font-style: normal;
+}
+
 .pure-g {
 	width: 100%;
 }
@@ -22,17 +40,13 @@
 	border-color: transparent;
 }
 
-a {
-	color: #174279;
-}
-
 /* Remove border for screens larger than 768px */
 @media (max-width: 35.5em) {
-  .borders {
-	border-left: none;
-    border-right: none;
+	.borders {
+	  border-left: none;
+	  border-right: none;
+	}
   }
-}
 
 .menu-style {
 	color: black;
@@ -44,17 +58,7 @@ a {
 	margin: 0 auto;
 }
 
-	
-html, button, input, select, textarea,
-	.pure-g [class *= "pure-u"] {
-	/* Set your content font stack here: */
-	font-family: "Raleway", sans-serif;
-	line-height: 2em;
-	font-size: 18px;
-	font-style: normal;
-}
 
-	
 figure {
 	text-align: right;
 	font-style: italic;
@@ -73,6 +77,11 @@ figure {
 .center {
 	margin: 0 auto;
 	width: 85%; /* just an arbitrary amount */
+}
+
+.padded {
+	padding-top: 30px; 
+	margin-top: -30px;
 }
 	
 .red-style {
@@ -180,11 +189,6 @@ figure {
 	border: none;
   }
 
-  body {
-    overflow-x: hidden;
-    width: 100%;
-}
-
 /* For new menu */
 
 .custom-wrapper {
@@ -264,7 +268,3 @@ figure {
 
 }
 
-.padded {
-	padding-top: 30px; 
-	margin-top: -30px;
-}
