@@ -139,13 +139,14 @@ figure {
 .head {
 	color: rgb(191, 40, 85); 
 	font-weight: 700; 
-	font-family: arial, 
-	helvetica, sans-serif; 
+	font-family: arial,	helvetica, sans-serif; 
 	font-size: 30px; 
 	font-weight: bold; 
 	font-style: italic; 
 	padding: 0.2em;
 	text-transform: none;
+	word-wrap: break-word !important;
+	overflow-wrap: break-word !important;
 }
 
 .subhead-1 {
