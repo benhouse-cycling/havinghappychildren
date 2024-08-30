@@ -42,8 +42,8 @@ html, button, input, select, textarea,
 /* Adjust text for smaller screens */
 @media (max-width: 35.5em) {
 	.l-box {
-		margin-left: 1em;
-		margin-right: 1em;
+		margin-left: 0.5em;
+		margin-right: 0.5em;
 		/* text-align:justify; */
 	}
   }
