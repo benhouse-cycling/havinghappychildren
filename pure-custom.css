@@ -26,6 +26,10 @@ html, button, input, select, textarea,
 	height: auto;
 }
 
+.horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 .l-box {
         margin-left: 2em;
@@ -34,8 +38,8 @@ html, button, input, select, textarea,
 }
 
 .indented {
-	margin-left: 1em; 
-	line-height: 1.1;
+	margin-left: 2em; 
+	line-height: 1;
   }
 
 
@@ -43,8 +47,8 @@ html, button, input, select, textarea,
 /* Adjust text for smaller screens */
 @media (max-width: 35.5em) {
 	.l-box {
-		margin-left: 0.5em;
-		margin-right: 0.5em;
+		margin-left: 0.3em;
+		margin-right: 0.3em;
 		/* text-align:justify; */
 	}
   }
