@@ -141,6 +141,22 @@ figure {
 	
 }
 
+.block-images-p2 {
+	display: flex; 
+    object-fit: contain;
+	/* max-height: 15em; */
+
+}
+
+.block-images-p2 img {
+	width: 100%;
+	/* max-width: 280px; */
+	height: auto;
+	padding: 2px;
+	margin: 0;
+	
+}
+
 .head {
 	color: rgb(191, 40, 85); 
 	font-weight: 700; 
