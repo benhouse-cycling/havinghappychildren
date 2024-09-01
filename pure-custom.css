@@ -1,10 +1,29 @@
+/*
+* { 
+	outline: 1px solid red;
+	outline-offset: -1px;
+  }
+
+*/
+
 body {
     overflow-x: hidden;
     width: 100%;
 }
 
+.container {
+	/* max-width: 1085px; */
+	max-width: 58.5em; 	
+	margin: 0 auto;
+}
+
 a {
 	color: #174279;
+}
+
+.inline-link {
+	color: #174279;
+	text-decoration: none;
 }
 
 html, button, input, select, textarea,
@@ -26,57 +45,58 @@ html, button, input, select, textarea,
 	height: auto;
 }
 
+/* unused?
 .horizontal {
     display: flex;
     flex-wrap: nowrap;
 }
+*/
+
 
 .l-box {
-        margin-left: 2em;
-		padding: 0.5em 2em;
-	/* border: 1px solid #555; */
+		margin-left: 2em;
+        /* margin-left: 2em; */
+		/* padding: 0.5em 2em; */
+	 /* border: 1px solid #555; */
 }
+
 
 .indented {
 	margin-left: 2em; 
 	line-height: 1;
   }
 
-
-
 /* Adjust text for smaller screens */
 @media (max-width: 35.5em) {
 	.l-box {
-		margin-left: 0.3em;
-		margin-right: 0.3em;
+		margin-left: 0.25em;
+		margin-right: 0.25em;
 		/* text-align:justify; */
 	}
   }
 
+/* unused
 .borders {
 	border-left: 5em solid;
 	border-right: 5em solid;
 	border-color: transparent;
-}
 
-/* Remove border for screens larger than 768px */
+} */
+
+/* Remove border for screens larger than 768px - unused?
 @media (max-width: 35.5em) {
 	.borders {
 	  border-left: none;
 	  border-right: none;
 	}
   }
+ */
 
 .menu-style {
 	color: black;
 	font-size: 16px;
 }
  
-.container {
-	max-width: 1200px;	
-	margin: 0 auto;
-}
-
 
 figure {
 	text-align: right;
@@ -86,22 +106,26 @@ figure {
 	object-fit: contain;
 }
 
+
+/* unused ?
 .part {
 	font-size: 18px;
 	font-weight: bold;
 	text-align: left;
 	line-height: 1em;
-}
+} */
+
 
 .center {
 	margin: 0 auto !important;
 	width: 80% !important; /* just an arbitrary amount */
 }
 
+/* unused
 .padded {
 	padding-top: 30px; 
 	margin-top: -30px;
-}
+} */
 	
 .red-style {
 	color: red;
@@ -132,6 +156,7 @@ figure {
 
 }
 
+/* unusued
 .block-images img {
 	width: 33.3%;
 	max-width: 333px;
@@ -139,23 +164,7 @@ figure {
 	padding: 2px;
 	margin: 0;
 	
-}
-
-.block-images-p2 {
-	display: flex; 
-    object-fit: contain;
-	/* max-height: 15em; */
-
-}
-
-.block-images-p2 img {
-	width: 100%;
-	/* max-width: 280px; */
-	height: auto;
-	padding: 2px;
-	margin: 0;
-	
-}
+} */
 
 .head {
 	color: rgb(191, 40, 85); 
