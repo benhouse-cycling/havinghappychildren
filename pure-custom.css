@@ -16,7 +16,7 @@ body {
 	margin: 0 auto;
 }
 
-@media screen and (max-width: 35.5em) {
+@media (max-width: 35.5em) {
 	.collapse {
 	  display: none;
 	}
