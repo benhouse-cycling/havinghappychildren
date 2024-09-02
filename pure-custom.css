@@ -1,10 +1,11 @@
-/*
-* { 
+
+/* * { 
 	outline: 1px solid red;
 	outline-offset: -1px;
   }
+	*/
 
-*/
+
 
 body {
     overflow-x: hidden;
@@ -15,6 +16,12 @@ body {
 	/* max-width: 1085px; */
 	max-width: 58.5em; 	
 	margin: 0 auto;
+}
+
+.lead-container {
+	max-width: 48em; 	
+	margin: 0 auto;
+
 }
 
 a {
@@ -45,13 +52,6 @@ html, button, input, select, textarea,
 	height: auto;
 }
 
-/* unused?
-.horizontal {
-    display: flex;
-    flex-wrap: nowrap;
-}
-*/
-
 
 .l-box {
 		margin-left: 2em;
@@ -75,22 +75,6 @@ html, button, input, select, textarea,
 	}
   }
 
-/* unused
-.borders {
-	border-left: 5em solid;
-	border-right: 5em solid;
-	border-color: transparent;
-
-} */
-
-/* Remove border for screens larger than 768px - unused?
-@media (max-width: 35.5em) {
-	.borders {
-	  border-left: none;
-	  border-right: none;
-	}
-  }
- */
 
 .menu-style {
 	color: black;
@@ -106,27 +90,12 @@ figure {
 	object-fit: contain;
 }
 
-
-/* unused ?
-.part {
-	font-size: 18px;
-	font-weight: bold;
-	text-align: left;
-	line-height: 1em;
-} */
-
-
 .center {
 	margin: 0 auto !important;
-	width: 80% !important; /* just an arbitrary amount */
+	/* width: 80% !important; /* just an arbitrary amount */
 }
 
-/* unused
-.padded {
-	padding-top: 30px; 
-	margin-top: -30px;
-} */
-	
+
 .red-style {
 	color: red;
 	font-weight: bold;
@@ -155,16 +124,6 @@ figure {
 	max-height: 15em;
 
 }
-
-/* unusued
-.block-images img {
-	width: 33.3%;
-	max-width: 333px;
-	height: auto;
-	padding: 2px;
-	margin: 0;
-	
-} */
 
 .head {
 	color: rgb(191, 40, 85); 
