@@ -3,7 +3,7 @@
 	outline: 1px solid red;
 	outline-offset: -1px;
   }
-	*/
+*/
 
 
 
@@ -37,29 +37,34 @@ html, button, input, select, textarea,
 	.pure-g [class *= "pure-u"] {
 	/* Set your content font stack here: */
 	font-family: "Raleway", sans-serif;
-	line-height: 2em;
+	line-height: 1.8em;
 	font-size: 18px;
 	font-style: normal;
 }
 
 .pure-g {
 	width: 100%;
-}
 
+}
 
 .pure-img {
 	width: 100% !important;
 	height: auto;
 }
 
+figure {
+	text-align: right;
+	font-style: italic;
+	font-size: small;
+	text-indent: 0;
+	object-fit: contain;
+	margin-inline-start: 20px;
+	margin-inline-end: 20px;
+}
 
 .l-box {
 		margin-left: 2em;
-        /* margin-left: 2em; */
-		/* padding: 0.5em 2em; */
-	 /* border: 1px solid #555; */
 }
-
 
 .indented {
 	margin-left: 2em; 
@@ -80,15 +85,7 @@ html, button, input, select, textarea,
 	color: black;
 	font-size: 16px;
 }
- 
 
-figure {
-	text-align: right;
-	font-style: italic;
-	font-size: small;
-	text-indent: 0;
-	object-fit: contain;
-}
 
 .center {
 	margin: 0 auto !important;
