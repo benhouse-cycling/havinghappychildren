@@ -73,7 +73,7 @@ figure {
 .indented {
 	margin-left: 2em; 
 	line-height: 1;
-  }
+}
 
 /* Adjust text for smaller screens */
 @media (max-width: 35.5em) {
@@ -82,7 +82,23 @@ figure {
 		margin-right: 1em;
 		/* text-align:justify; */
 	}
-  }
+}
+
+@media (max-width: 35.5em) {
+	.subhead-1 {
+		margin-top: -1em;
+		margin-bottom: 0;
+		font-size: 18px !important;
+
+	}
+}
+
+  @media (max-width: 35.5em) {
+	.subhead-2 {
+		font-size: 16px !important;
+
+	}
+}
 
 
 .menu-style {
@@ -145,7 +161,9 @@ figure {
 	font-family: arial, helvetica, sans-serif; 
 	font-size: 24px; 
 	margin-bottom: 0.5rem;
+	margin-top: 0;
 	padding: 0.2em;
+
 }
 
 .subhead-2 {
@@ -156,6 +174,7 @@ figure {
 	font-family: arial, helvetica, sans-serif; 
 	font-size: 20px; 
 	margin-bottom: 0.5rem;
+
 }
 	
 #back2Top {
@@ -219,6 +238,7 @@ figure {
 .custom-menu-3 {
 	text-align: right;
 	padding-right: 30px;
+
 }
 
 .custom-toggle {
