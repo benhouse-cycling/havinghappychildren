@@ -67,7 +67,7 @@ figure {
 }
 
 .l-box {
-		margin-left: 2em;
+	margin-left: 2em;
 }
 
 .indented {
@@ -78,8 +78,8 @@ figure {
 /* Adjust text for smaller screens */
 @media (max-width: 35.5em) {
 	.l-box {
-		margin-left: 0.25em;
-		margin-right: 0.25em;
+		margin-left: 1em;
+		margin-right: 1em;
 		/* text-align:justify; */
 	}
   }
