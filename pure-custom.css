@@ -1,9 +1,13 @@
 
-/* * { 
+/*
+* { 
 	outline: 1px solid red;
 	outline-offset: -1px;
-  }
-*/
+}
+	*/
+
+
+
 
 body {
     overflow-x: hidden;
@@ -20,7 +24,7 @@ body {
 	.collapse {
 	  display: none;
 	}
-  }
+}
 
 .lead-container {
 	max-width: 48em; 	
@@ -98,12 +102,6 @@ figure {
 		font-size: 16px !important;
 
 	}
-}
-
-
-.menu-style {
-	color: black;
-	font-size: 16px;
 }
 
 
@@ -204,7 +202,7 @@ figure {
 	width: 100%;
 	/* padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 	padding-top: 75%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-  }
+}
 
   /* Then style the iframe to fit in the container div with full height and width */
   .responsive-iframe {
@@ -216,9 +214,15 @@ figure {
 	width: 100%;
 	height: 100%;
 	border: none;
-  }
+}
 
 /* For new menu */
+
+.pure-menu-link {
+	color: black;
+	font-size: 16px;
+
+}
 
 .custom-wrapper {
 	margin-bottom: 1em;
