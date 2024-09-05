@@ -1,11 +1,3 @@
-
-/*
-* { 
-	outline: 1px solid red;
-	outline-offset: -1px;
-}
-	*/
-
 body {
     overflow-x: hidden;
     width: 100%;
@@ -40,7 +32,6 @@ a {
 
 html, button, input, select, textarea,
 	.pure-g [class *= "pure-u"] {
-	/* Set your content font stack here: */
 	font-family: "Raleway", sans-serif;
 	line-height: 1.8em;
 	font-size: 18px;
@@ -101,14 +92,11 @@ li {
   @media (max-width: 35.5em) {
 	.subhead-2 {
 		font-size: 16px !important;
-
 	}
 }
 
-
 .center {
 	margin: 0 auto !important;
-
 }
 
 
@@ -204,7 +192,7 @@ li {
 	padding-top: 75%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
 }
 
-  /* Then style the iframe to fit in the container div with full height and width */
+  /* Style the iframe to fit in the container div with full height and width */
   .responsive-iframe {
 	position: absolute;
 	top: 0;
@@ -217,7 +205,6 @@ li {
 }
 
 /* For new menu */
-
 .pure-menu-link {
 	color: black;
 	font-size: 16px;
