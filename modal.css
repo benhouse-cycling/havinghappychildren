@@ -18,16 +18,24 @@
     background-color: #fefefe;
     margin: auto;
     padding: 10px;
-    border: 1px solid #888;
+    border: 1px solid #888; 
     width: 80%;
+  }
+
+  @media (max-width: 35.5em) {
+    .modal-content {
+        width: 95%;
+    }
   }
   
   /* The Close Button */
   .close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 42px;
     font-weight: bold;
+    margin-bottom: 0.2em;
+    margin-right: 0.1em;
   }
   
   .close:hover,
