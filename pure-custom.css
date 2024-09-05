@@ -76,6 +76,10 @@ figure {
 	line-height: 1;
 }
 
+li {
+	line-height: 1.5em;
+}
+
 /* Adjust text for smaller screens */
 @media (max-width: 35.5em) {
 	.l-box {
